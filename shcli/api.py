@@ -16,6 +16,7 @@ def create(domain, token, text, visibility):
         data={
             "text": text,
             "visibility": visibility,
+            "federate": True,
         }
     )
     return response.json()
